@@ -1,0 +1,143 @@
+:root {
+  --primary: rgb(39, 235, 185);
+  --white: rgb(255, 255, 255);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container--background-primary-white {
+  background-image: linear-gradient(to right, var(--primary) 50%, var(--white) 50%);
+  background-position: -90px 0px;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+.container__segment {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  height: 550px;
+  width: 700px;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.15);
+}
+
+.container__segment--center--white {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  width: 90%;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.15);
+  padding: 50px;
+}
+
+section {
+  background-color: transparent;
+  display: grid;
+  gap: 10px;
+}
+
+section span {
+  width: 150px;
+  text-align: center;
+}
+
+section img {
+  height: 120px;
+  justify-self: center;
+}
+
+a {
+  color: black;
+  font-size: smaller;
+}
+
+.section__link {
+  text-align: end;
+  margin-top: -20px;
+  margin-right: -35px;
+}
+
+.form {
+  height: 350px;
+}
+
+.container .container__segment section .form label {
+  font-weight: 500;
+}
+
+.form__link {
+  text-align: end;
+}
+
+section h1 {
+  text-align: center;
+  font-size: medium;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+section:last-of-type {
+  width: 300px;
+}
+
+.form__button {
+  background-color: var(--primary);
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: small;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.button--primary {
+  background-color: var(--primary);
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: small;
+}
+
+.form__message {
+  font-size: small;
+  text-align: center;
+}
+
+.help__links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 50px;
+  align-items: flex-end;
+}
+
+.help__links button {
+  background-color: var(--primary);
+  border: none;
+  padding: 5px;
+  padding-inline: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.help__links a:last-of-type button {
+  font-size: larger;
+  padding: 12px;
+}
+
+.form__link--login {
+  text-align: end;
+  font-size: medium;
+  margin-top: 10px;
+}
